@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="test_ATM:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/test_ATM_jar</output-path>
+    <root id="archive" name="test_ATM.jar">
+      <element id="module-output" name="test_ATM" />
+      <element id="extracted-dir" path="C:/Program Files/Java/jdk1.8.0_392/lib/postgresql-42.2.27.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
