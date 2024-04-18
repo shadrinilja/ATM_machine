@@ -27,7 +27,8 @@ public class Solution {
             String password = args[2];
             bd.PASSWORD = password;
         }
-            Input input = new Input();
-            input.getInput();
+        bd.create();
+        Input input = new Input();
+        input.getInput();
     }
 }

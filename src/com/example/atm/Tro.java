@@ -25,6 +25,24 @@ public class Tro {
         return null;
     }
 
+    public void create(){
+        try{
+            String query = "CREATE TABLE users (\n" +
+                    "    num_card bigint,\n" +
+                    "    password integer,\n" +
+                    "    balance integer,\n" +
+                    "    status boolean\n" +
+                    ")";
+
+            pstmt = getConnection().prepareStatement(query);
+            pstmt.executeQuery();
+        }catch (Exception e) {
+            System.err.println("Error accessing database!");
+            e.printStackTrace();
+        }
+
+
+    }
     public void SaveNewAc(long num_card, int password){
         try{
             pstmt = getConnection().prepareStatement("INSERT INTO Profile(num_card,password,balance,status) VALUES(?,?,?,?)");
