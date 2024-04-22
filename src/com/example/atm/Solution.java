@@ -27,7 +27,15 @@ public class Solution {
             String password = args[2];
             bd.PASSWORD = password;
         }
-        bd.create();
+
+               String query = "CREATE TABLE IF NOT EXISTS Profile (\n" +
+                "    num_card bigint,\n" +
+                "    password integer,\n" +
+                "    balance integer,\n" +
+                "    status boolean\n" +
+                ")";
+
+        bd.create(query);
         Input input = new Input();
         input.getInput();
     }
